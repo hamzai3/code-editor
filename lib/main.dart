@@ -8,14 +8,7 @@ import 'package:get/get.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-      options: const FirebaseOptions(
-    apiKey: 'AIzaSyAppp2U2iPMeDjtNQgqbyiljWFbzogYGkU',
-    appId: 'com.hamza.code_editor',
-    messagingSenderId: '1068887994090',
-    projectId: 'share-chat-b8795',
-    storageBucket: 'share-chat-b8795.appspot.com',
-  ));
+  await Firebase.initializeApp();
     await dotenv.load(fileName: ".env");
   runApp(const MyApp());
 }
